@@ -32,8 +32,8 @@ function viewCart() {
     return ("Your shopping cart is empty.");
   }
   let statementArray = []
-  let i = 0, l = cart.length 
-  while(i < l) { 
+  let i = 0
+  while(0 < cart.length) { 
   var item = Object.values(cart[i])[0]
   var price = Object.values(cart[i])[1]
   statementArray.push(item +" at $" + price);
